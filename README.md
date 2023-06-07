@@ -7,12 +7,18 @@ https://go.dev/dl/
 - Install Go\
 https://go.dev/doc/install
 - Install `nicsearch`\
-go install github.com/BourgeoisBear/nicsearch@latest
+`go install github.com/BourgeoisBear/nicsearch@latest`
 
 ### download & build cidrmerge
-	https://cidrmerge.sourceforge.net/
-	https://sourceforge.net/projects/cidrmerge/files/cidrmerge/cidrmerge-1.5.3/cidrmerge-1.5.3.tar.gz/download
 
+download from https://sourceforge.net/projects/cidrmerge/files/cidrmerge/cidrmerge-1.5.3/cidrmerge-1.5.3.tar.gz/download
+
+extract & build
+
+```sh
+tar -xvf ./cidrmerge-1.5.3.tar.gz
+cd cidrmerge && make
+```
 ### make assholes list
 	nicsearch 'cc RU' | grep IPV4 | cut -d\| -f4 | cidrmerge
 
